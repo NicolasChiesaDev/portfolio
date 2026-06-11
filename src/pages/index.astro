@@ -41,8 +41,42 @@ import Layout from '../layouts/Layout.astro';
     <section id="proyectos" class="py-20 bg-white dark:bg-gray-900 transition-colors duration-300">
         <div class="max-w-5xl mx-auto px-6">
             <h3 class="text-3xl font-bold mb-12 text-center md:text-left text-gray-900 dark:text-white">Proyectos Destacados</h3>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- ── ARGECON AI (NUEVO) ───────────────────────────────── -->
+                <div class="border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition flex flex-col">
+                    <div class="relative w-full h-56 group bg-gray-200 dark:bg-gray-700">
+                        <div class="flex overflow-x-auto snap-x snap-mandatory hide-scrollbar h-full w-full">
+                            <div class="snap-center shrink-0 w-full h-full"><img src="/argecon/1.png" alt="Dashboard ArgEcon AI" class="w-full h-full object-cover"></div>
+                            <div class="snap-center shrink-0 w-full h-full"><img src="/argecon/2.png" alt="Tarjetas de datos económicos" class="w-full h-full object-cover"></div>
+                            <div class="snap-center shrink-0 w-full h-full"><img src="/argecon/3.png" alt="Análisis generado por IA" class="w-full h-full object-cover"></div>
+                        </div>
+                        <div class="absolute bottom-3 right-3 bg-black/60 backdrop-blur-sm text-white text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                            <i class="fa-solid fa-arrows-left-right mr-1"></i> Deslizar
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="text-xl font-bold text-gray-900 dark:text-white">ArgEcon AI — Monitor Económico</h4>
+                            <a href="https://github.com/Nicocc12/argencon-ai" target="_blank" class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
+                                <i class="fa-brands fa-github text-xl"></i>
+                            </a>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4 flex-1 text-sm">
+                            Agente de análisis económico argentino en tiempo real. Consume las APIs oficiales del BCRA y dolarapi.com para obtener cotizaciones del dólar, reservas internacionales y variables monetarias. Calcula inflación acumulada y tendencia de los últimos 12 meses, y genera análisis automáticos en lenguaje natural usando LLaMA 3 a través de Groq AI.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">Python</span>
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">FastAPI</span>
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">LLaMA 3</span>
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">IA Generativa</span>
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">REST API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── MARATÓN ─────────────────────────────────────────── -->
                 <div class="border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition flex flex-col">
                     <div class="relative w-full h-56 group bg-gray-200 dark:bg-gray-700">
                         <div class="flex overflow-x-auto snap-x snap-mandatory hide-scrollbar h-full w-full">
@@ -74,6 +108,7 @@ import Layout from '../layouts/Layout.astro';
                     </div>
                 </div>
 
+                <!-- ── FRAVEGA E-COMMERCE ──────────────────────────────── -->
                 <div class="border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition flex flex-col">
                     <div class="relative w-full h-56 group bg-gray-200 dark:bg-gray-700">
                         <div class="flex overflow-x-auto snap-x snap-mandatory hide-scrollbar h-full w-full">
@@ -103,6 +138,7 @@ import Layout from '../layouts/Layout.astro';
                     </div>
                 </div>
 
+                <!-- ── BIBLIOTECA ──────────────────────────────────────── -->
                 <div class="border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition flex flex-col">
                     <div class="relative w-full h-56 group bg-gray-200 dark:bg-gray-700">
                         <div class="flex overflow-x-auto snap-x snap-mandatory hide-scrollbar h-full w-full">
@@ -129,6 +165,7 @@ import Layout from '../layouts/Layout.astro';
                     </div>
                 </div>
 
+                <!-- ── SNAKE GAME ──────────────────────────────────────── -->
                 <div class="border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition flex flex-col">
                     <div class="relative w-full h-56 group bg-gray-200 dark:bg-gray-700">
                         <div class="flex overflow-x-auto snap-x snap-mandatory hide-scrollbar h-full w-full">
@@ -154,6 +191,7 @@ import Layout from '../layouts/Layout.astro';
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -217,6 +255,16 @@ import Layout from '../layouts/Layout.astro';
                     <h5 class="font-medium dark:text-white">Git & GitHub</h5>
                     <p class="text-xs text-gray-500 mt-1">Version Control</p>
                 </div>
+                <div class="p-6 border border-gray-100 dark:border-gray-800 dark:bg-gray-800 rounded-xl hover:shadow-md transition">
+                    <i class="fa-solid fa-bolt text-4xl text-green-500 mb-3"></i>
+                    <h5 class="font-medium dark:text-white">FastAPI</h5>
+                    <p class="text-xs text-gray-500 mt-1">REST APIs</p>
+                </div>
+                <div class="p-6 border border-gray-100 dark:border-gray-800 dark:bg-gray-800 rounded-xl hover:shadow-md transition">
+                    <i class="fa-solid fa-robot text-4xl text-purple-500 mb-3"></i>
+                    <h5 class="font-medium dark:text-white">IA Generativa</h5>
+                    <p class="text-xs text-gray-500 mt-1">LLMs & Agentes</p>
+                </div>
             </div>
         </div>
     </section>
@@ -225,7 +273,7 @@ import Layout from '../layouts/Layout.astro';
         <div class="max-w-3xl mx-auto px-6 text-center">
             <h3 class="text-3xl font-bold mb-6">¿Trabajamos juntos?</h3>
             <p class="text-blue-100 mb-8 text-lg">Si tenés un proyecto en mente o querés sumar un perfil proactivo a tu equipo, completá el formulario o contactame por LinkedIn.</p>
-            
+
             <form action="https://formspree.io/f/meevonrw" method="POST" class="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-xl text-left mb-10">
                 <div class="grid grid-cols-1 gap-6">
                     <div>
@@ -272,7 +320,6 @@ import Layout from '../layouts/Layout.astro';
 
             btn.onclick = function() {
                 document.documentElement.classList.toggle('dark');
-                
                 darkIcon.classList.toggle('hidden');
                 lightIcon.classList.toggle('hidden');
             };
