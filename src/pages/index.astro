@@ -1,9 +1,13 @@
----
+Acá tenés el archivo `index.astro` completo y corregido. Ya tiene integrados los tres proyectos correctos (ArgEcon AI, Maratón y el Sistema de Biblioteca en Java centrado al final), además de todos los ajustes enfocados en tu perfil backend.
+
+Podés copiar este bloque entero y pegarlo directamente para reemplazar el contenido de tu archivo:
+
+```astro
 // src/pages/index.astro
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Portfolio | Desarrollador Web Full Stack">
+<Layout title="Portfolio | Nicolas Chiesa - Desarrollador Backend">
     <nav class="fixed w-full bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm shadow-sm z-50 transition-colors duration-300">
         <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
             <span class="text-xl font-bold text-blue-600 dark:text-blue-400">&lt;Nicolas Chiesa/&gt;</span>
@@ -27,13 +31,13 @@ import Layout from '../layouts/Layout.astro';
             <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4 text-gray-900 dark:text-white">
                 Hola, soy <span class="text-blue-600 dark:text-blue-400">Nicolas</span>
             </h1>
-            <h2 class="text-2xl text-gray-600 dark:text-gray-300 mb-6">Desarrollador Web Full Stack</h2>
+            <h2 class="text-2xl text-gray-600 dark:text-gray-300 mb-6">Desarrollador Backend Python</h2>
             <p class="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-2xl">
-                Me especializo en crear sistemas web eficientes y soluciones prácticas. Transformo ideas complejas en código limpio y funcional, enfocado siempre en la experiencia del usuario.
+                Me especializo en construir la lógica invisible que hace que todo funcione. Desarrollo APIs REST eficientes, automatizo procesos e integro modelos de lenguaje (LLMs) para crear soluciones escalables y arquitecturas de datos sólidas.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                 <a href="#proyectos" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition text-center">Ver mis proyectos</a>
-                <a href="/archivos/Nicolas_Chiesa_CV_Desarrollador_FullStack.pdf" download="Nicolas_Chiesa_CV.pdf" class="border-2 border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 px-8 py-3 rounded-lg font-medium hover:bg-gray-50 dark:hover:bg-gray-800 transition text-center"><i class="fa-solid fa-download mr-2"></i>Descargar CV</a>
+                <a href="/archivos/Nicolas_Chiesa_CV_Backend.pdf" download="Nicolas_Chiesa_CV.pdf" class="border-2 border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 px-8 py-3 rounded-lg font-medium hover:bg-gray-50 dark:hover:bg-gray-800 transition text-center"><i class="fa-solid fa-download mr-2"></i>Descargar CV</a>
             </div>
         </div>
     </header>
@@ -44,7 +48,7 @@ import Layout from '../layouts/Layout.astro';
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-                <!-- ── ARGECON AI (NUEVO) ───────────────────────────────── -->
+                <!-- ── ARGECON AI ───────────────────────────────── -->
                 <div class="border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition flex flex-col">
                     <div class="relative w-full h-56 group bg-gray-200 dark:bg-gray-700">
                         <div class="flex overflow-x-auto snap-x snap-mandatory hide-scrollbar h-full w-full">
@@ -59,7 +63,7 @@ import Layout from '../layouts/Layout.astro';
                     <div class="p-6 flex-1 flex flex-col">
                         <div class="flex justify-between items-start mb-4">
                             <h4 class="text-xl font-bold text-gray-900 dark:text-white">ArgEcon AI — Monitor Económico</h4>
-                            <a href="https://github.com/Nicocc12/argecon-aigit" target="_blank" class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
+                            <a href="https://github.com/Nicocc12/argecon-ai" target="_blank" class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
                                 <i class="fa-brands fa-github text-xl"></i>
                             </a>
                         </div>
@@ -71,7 +75,6 @@ import Layout from '../layouts/Layout.astro';
                             <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">FastAPI</span>
                             <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">LLaMA 3</span>
                             <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">IA Generativa</span>
-                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">REST API</span>
                         </div>
                     </div>
                 </div>
@@ -81,12 +84,8 @@ import Layout from '../layouts/Layout.astro';
                     <div class="relative w-full h-56 group bg-gray-200 dark:bg-gray-700">
                         <div class="flex overflow-x-auto snap-x snap-mandatory hide-scrollbar h-full w-full">
                             <div class="snap-center shrink-0 w-full h-full"><img src="/maraton/1.jpg" alt="Pantalla principal Maratón" class="w-full h-full object-cover"></div>
-                            <div class="snap-center shrink-0 w-full h-full"><img src="/maraton/2.jpg" alt="Motivo" class="w-full h-full object-cover"></div>
-                            <div class="snap-center shrink-0 w-full h-full"><img src="/maraton/3.jpg" alt="Recorrido" class="w-full h-full object-cover"></div>
                             <div class="snap-center shrink-0 w-full h-full"><img src="/maraton/4.jpg" alt="Formularios" class="w-full h-full object-cover"></div>
                             <div class="snap-center shrink-0 w-full h-full"><img src="/maraton/5.jpg" alt="QR" class="w-full h-full object-cover"></div>
-                            <div class="snap-center shrink-0 w-full h-full"><img src="/maraton/6.jpg" alt="footer" class="w-full h-full object-cover"></div>
-                            <div class="snap-center shrink-0 w-full h-full"><img src="/maraton/7.jpg" alt="inscripcion" class="w-full h-full object-cover"></div>
                         </div>
                         <div class="absolute bottom-3 right-3 bg-black/60 backdrop-blur-sm text-white text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
                             <i class="fa-solid fa-arrows-left-right mr-1"></i> Deslizar
@@ -108,38 +107,8 @@ import Layout from '../layouts/Layout.astro';
                     </div>
                 </div>
 
-                <!-- ── FRAVEGA E-COMMERCE ──────────────────────────────── -->
-                <div class="border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition flex flex-col">
-                    <div class="relative w-full h-56 group bg-gray-200 dark:bg-gray-700">
-                        <div class="flex overflow-x-auto snap-x snap-mandatory hide-scrollbar h-full w-full">
-                            <div class="snap-center shrink-0 w-full h-full"><img src="/fravega/2.jpeg" alt="Home de la App" class="w-full h-full object-contain"></div>
-                            <div class="snap-center shrink-0 w-full h-full"><img src="/fravega/3.jpeg" alt="drawer" class="w-full h-full object-contain"></div>
-                            <div class="snap-center shrink-0 w-full h-full"><img src="/fravega/1.jpeg" alt="Catálogo de productos" class="w-full h-full object-contain"></div>
-                            <div class="snap-center shrink-0 w-full h-full"><img src="/fravega/4.jpeg" alt="historia" class="w-full h-full object-contain"></div>
-                            <div class="snap-center shrink-0 w-full h-full"><img src="/fravega/5.jpeg" alt="perfil" class="w-full h-full object-contain"></div>
-                            <div class="snap-center shrink-0 w-full h-full"><img src="/fravega/6.jpeg" alt="lista" class="w-full h-full object-contain"></div>
-                        </div>
-                        <div class="absolute bottom-3 right-3 bg-black/60 backdrop-blur-sm text-white text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-                            <i class="fa-solid fa-arrows-left-right mr-1"></i> Deslizar
-                        </div>
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col">
-                        <div class="flex justify-between items-start mb-4">
-                            <h4 class="text-xl font-bold text-gray-900 dark:text-white">Clon E-commerce (React Native)</h4>
-                            <a href="https://github.com/Nicocc12/ecommerce-mobile-react-native" target="_blank" class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400"><i class="fa-brands fa-github text-xl"></i></a>
-                        </div>
-                        <p class="text-gray-600 dark:text-gray-400 mb-4 flex-1 text-sm">
-                            Réplica funcional de una app comercial enfocada en interfaces móviles modernas y flujos complejos. Incluye recreación fiel de la UI, navegación lateral (Drawer), perfil de usuario y un catálogo dinámico con visualización de productos y precios.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mt-auto">
-                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">React Native</span>
-                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">UI/UX</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ── BIBLIOTECA ──────────────────────────────────────── -->
-                <div class="border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition flex flex-col">
+                <!-- ── BIBLIOTECA (JAVA) ──────────────────────────────── -->
+                <div class="border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition flex flex-col md:col-span-2 md:w-1/2 md:mx-auto">
                     <div class="relative w-full h-56 group bg-gray-200 dark:bg-gray-700">
                         <div class="flex overflow-x-auto snap-x snap-mandatory hide-scrollbar h-full w-full">
                             <div class="snap-center shrink-0 w-full h-full"><img src="/biblioteca/1.png" alt="Material" class="w-full h-full object-contain"></div>
@@ -161,33 +130,7 @@ import Layout from '../layouts/Layout.astro';
                         <div class="flex flex-wrap gap-2 mt-auto">
                             <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">Java</span>
                             <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">POO</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ── SNAKE GAME ──────────────────────────────────────── -->
-                <div class="border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition flex flex-col">
-                    <div class="relative w-full h-56 group bg-gray-200 dark:bg-gray-700">
-                        <div class="flex overflow-x-auto snap-x snap-mandatory hide-scrollbar h-full w-full">
-                            <div class="snap-center shrink-0 w-full h-full"><img src="/snakegame/1.png" alt="Pantalla de juego" class="w-full h-full object-contain"></div>
-                            <div class="snap-center shrink-0 w-full h-full"><img src="/snakegame/2.png" alt="Gameplay" class="w-full h-full object-contain"></div>
-                            <div class="snap-center shrink-0 w-full h-full"><img src="/snakegame/3.png" alt="Pantalla de Game Over" class="w-full h-full object-contain"></div>
-                        </div>
-                        <div class="absolute bottom-3 right-3 bg-black/60 backdrop-blur-sm text-white text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-                            <i class="fa-solid fa-arrows-left-right mr-1"></i> Deslizar
-                        </div>
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col">
-                        <div class="flex justify-between items-start mb-4">
-                            <h4 class="text-xl font-bold text-gray-900 dark:text-white">Arcade: Snake Game</h4>
-                            <a href="https://github.com/Nicocc12" target="_blank" class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400"><i class="fa-brands fa-github text-xl"></i></a>
-                        </div>
-                        <p class="text-gray-600 dark:text-gray-400 mb-4 flex-1 text-sm">
-                            Desarrollo del clásico juego Arcade aplicando conceptos de Game Loop, manejo de colisiones y eventos de teclado en tiempo real. Un proyecto enfocado en fortalecer la lógica algorítmica pura.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mt-auto">
-                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">Python</span>
-                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">Lógica</span>
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">Migración de Datos</span>
                         </div>
                     </div>
                 </div>
@@ -201,10 +144,10 @@ import Layout from '../layouts/Layout.astro';
             <div class="flex-1">
                 <h3 class="text-3xl font-bold mb-6 text-gray-900 dark:text-white">Sobre Mí</h3>
                 <p class="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
-                    Soy un apasionado por la tecnología cursando el último año de la Tecnicatura en Programación. Me gusta involucrarme en todo el ciclo de desarrollo, desde la maquetación del front-end hasta la lógica dura de las bases de datos.
+                    Soy un apasionado por la tecnología cursando el último año de la Tecnicatura en Programación. Me especializo en el diseño de arquitecturas backend, la integración de APIs y el modelado de bases de datos.
                 </p>
                 <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
-                    Además de mi formación técnica, mi experiencia trabajando día a día como Vendedor y Asistente Administrativo me forjó habilidades fundamentales que el código no te enseña: comunicación clara con clientes, gestión de stock, resolución rápida de problemas y un fuerte enfoque en brindar soluciones reales.
+                    Además de mi formación técnica, mi experiencia trabajando día a día como Vendedor y Asistente Administrativo me forjó habilidades fundamentales que el código no te enseña: comunicación clara con clientes, gestión de stock, resolución metódica de problemas en tiempo real y un fuerte enfoque en brindar soluciones operativas.
                 </p>
             </div>
             <img src="/yo.jpg" alt="Foto de perfil de Nicolas" class="w-64 h-64 object-cover rounded-2xl shadow-lg border-4 border-white dark:border-gray-800">
@@ -215,45 +158,11 @@ import Layout from '../layouts/Layout.astro';
         <div class="max-w-5xl mx-auto px-6">
             <h3 class="text-3xl font-bold mb-12 text-center text-gray-900 dark:text-white">Tecnologías y Herramientas</h3>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-                <div class="p-6 border border-gray-100 dark:border-gray-800 dark:bg-gray-800 rounded-xl hover:shadow-md transition">
-                    <i class="fa-brands fa-js text-4xl text-yellow-400 mb-3"></i>
-                    <h5 class="font-medium dark:text-white">JavaScript</h5>
-                    <p class="text-xs text-gray-500 mt-1">Web & Logic</p>
-                </div>
-                <div class="p-6 border border-gray-100 dark:border-gray-800 dark:bg-gray-800 rounded-xl hover:shadow-md transition">
-                    <i class="fa-brands fa-react text-4xl text-blue-400 mb-3"></i>
-                    <h5 class="font-medium dark:text-white">React Native</h5>
-                    <p class="text-xs text-gray-500 mt-1">Mobile Apps</p>
-                </div>
-                <div class="p-6 border border-gray-100 dark:border-gray-800 dark:bg-gray-800 rounded-xl hover:shadow-md transition">
-                    <i class="fa-brands fa-java text-4xl text-red-600 mb-3"></i>
-                    <h5 class="font-medium dark:text-white">Java</h5>
-                    <p class="text-xs text-gray-500 mt-1">Desktop & POO</p>
-                </div>
+                <!-- Fila 1: Fuertes (Backend / Datos / IA) -->
                 <div class="p-6 border border-gray-100 dark:border-gray-800 dark:bg-gray-800 rounded-xl hover:shadow-md transition">
                     <i class="fa-brands fa-python text-4xl text-blue-500 mb-3"></i>
                     <h5 class="font-medium dark:text-white">Python</h5>
-                    <p class="text-xs text-gray-500 mt-1">Logic & Scripts</p>
-                </div>
-                <div class="p-6 border border-gray-100 dark:border-gray-800 dark:bg-gray-800 rounded-xl hover:shadow-md transition">
-                    <i class="fa-brands fa-php text-4xl text-indigo-500 mb-3"></i>
-                    <h5 class="font-medium dark:text-white">PHP</h5>
-                    <p class="text-xs text-gray-500 mt-1">Server Side</p>
-                </div>
-                <div class="p-6 border border-gray-100 dark:border-gray-800 dark:bg-gray-800 rounded-xl hover:shadow-md transition">
-                    <i class="fa-solid fa-database text-4xl text-blue-400 mb-3"></i>
-                    <h5 class="font-medium dark:text-white">MySQL</h5>
-                    <p class="text-xs text-gray-500 mt-1">Database</p>
-                </div>
-                <div class="p-6 border border-gray-100 dark:border-gray-800 dark:bg-gray-800 rounded-xl hover:shadow-md transition">
-                    <i class="fa-brands fa-html5 text-4xl text-orange-500 mb-3"></i>
-                    <h5 class="font-medium dark:text-white">HTML & CSS</h5>
-                    <p class="text-xs text-gray-500 mt-1">Structure & UI</p>
-                </div>
-                <div class="p-6 border border-gray-100 dark:border-gray-800 dark:bg-gray-800 rounded-xl hover:shadow-md transition">
-                    <i class="fa-brands fa-github text-4xl text-gray-700 dark:text-gray-300 mb-3"></i>
-                    <h5 class="font-medium dark:text-white">Git & GitHub</h5>
-                    <p class="text-xs text-gray-500 mt-1">Version Control</p>
+                    <p class="text-xs text-gray-500 mt-1">Backend & Lógica</p>
                 </div>
                 <div class="p-6 border border-gray-100 dark:border-gray-800 dark:bg-gray-800 rounded-xl hover:shadow-md transition">
                     <i class="fa-solid fa-bolt text-4xl text-green-500 mb-3"></i>
@@ -263,7 +172,35 @@ import Layout from '../layouts/Layout.astro';
                 <div class="p-6 border border-gray-100 dark:border-gray-800 dark:bg-gray-800 rounded-xl hover:shadow-md transition">
                     <i class="fa-solid fa-robot text-4xl text-purple-500 mb-3"></i>
                     <h5 class="font-medium dark:text-white">IA Generativa</h5>
-                    <p class="text-xs text-gray-500 mt-1">LLMs & Agentes</p>
+                    <p class="text-xs text-gray-500 mt-1">LLMs & Integración</p>
+                </div>
+                <div class="p-6 border border-gray-100 dark:border-gray-800 dark:bg-gray-800 rounded-xl hover:shadow-md transition">
+                    <i class="fa-solid fa-database text-4xl text-blue-400 mb-3"></i>
+                    <h5 class="font-medium dark:text-white">MySQL</h5>
+                    <p class="text-xs text-gray-500 mt-1">Modelado de Datos</p>
+                </div>
+                
+                <!-- Fila 2: Versatilidad Backend / Control -->
+                <div class="p-6 border border-gray-100 dark:border-gray-800 dark:bg-gray-800 rounded-xl hover:shadow-md transition">
+                    <i class="fa-brands fa-php text-4xl text-indigo-500 mb-3"></i>
+                    <h5 class="font-medium dark:text-white">PHP</h5>
+                    <p class="text-xs text-gray-500 mt-1">Server Side</p>
+                </div>
+                <div class="p-6 border border-gray-100 dark:border-gray-800 dark:bg-gray-800 rounded-xl hover:shadow-md transition">
+                    <i class="fa-brands fa-java text-4xl text-red-600 mb-3"></i>
+                    <h5 class="font-medium dark:text-white">Java</h5>
+                    <p class="text-xs text-gray-500 mt-1">POO Avanzado</p>
+                </div>
+                <div class="p-6 border border-gray-100 dark:border-gray-800 dark:bg-gray-800 rounded-xl hover:shadow-md transition">
+                    <i class="fa-brands fa-github text-4xl text-gray-700 dark:text-gray-300 mb-3"></i>
+                    <h5 class="font-medium dark:text-white">Git & GitHub</h5>
+                    <p class="text-xs text-gray-500 mt-1">Control de Versiones</p>
+                </div>
+                <!-- Fila 3: Complementarios Frontend -->
+                <div class="p-6 border border-gray-100 dark:border-gray-800 dark:bg-gray-800 rounded-xl hover:shadow-md transition">
+                    <i class="fa-brands fa-js text-4xl text-yellow-400 mb-3"></i>
+                    <h5 class="font-medium dark:text-white">JavaScript</h5>
+                    <p class="text-xs text-gray-500 mt-1">Integraciones</p>
                 </div>
             </div>
         </div>
@@ -326,3 +263,5 @@ import Layout from '../layouts/Layout.astro';
         };
     </script>
 </Layout>
+
+```
