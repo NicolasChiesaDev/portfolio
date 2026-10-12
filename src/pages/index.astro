@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Portfolio | Nicolas Chiesa - Desarrollador Backend">
+<Layout title="Nicolás Chiesa | Desarrollador Frontend" description="Desarrollador Frontend Junior. Interfaces web con React, Next.js, TypeScript y Tailwind CSS.">
     <nav class="fixed w-full bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm shadow-sm z-50 transition-colors duration-300">
         <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
             <span class="text-xl font-bold text-blue-600 dark:text-blue-400">&lt;Nicolas Chiesa/&gt;</span>
@@ -26,13 +26,13 @@ import Layout from '../layouts/Layout.astro';
             <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4 text-gray-900 dark:text-white">
                 Hola, soy <span class="text-blue-600 dark:text-blue-400">Nicolas</span>
             </h1>
-            <h2 class="text-2xl text-gray-600 dark:text-gray-300 mb-6">Desarrollador Backend Python</h2>
+            <h2 class="text-2xl text-gray-600 dark:text-gray-300 mb-6">Desarrollador Frontend Junior</h2>
             <p class="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-2xl">
-                Me especializo en construir la lógica invisible que hace que todo funcione. Desarrollo APIs REST eficientes, automatizo procesos e integro modelos de lenguaje (LLMs) para crear soluciones escalables y arquitecturas de datos sólidas.
+                Desarrollo interfaces web claras, responsive y accesibles con React, Next.js, TypeScript y Tailwind CSS. Estoy terminando la Tecnicatura Superior en Desarrollo de Software y busco mi primera posición como desarrollador frontend.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                 <a href="#proyectos" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition text-center">Ver mis proyectos</a>
-                <a href="/archivos/Nicolas_Chiesa_CV_Backend.pdf" download="Nicolas_Chiesa_CV.pdf" class="border-2 border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 px-8 py-3 rounded-lg font-medium hover:bg-gray-50 dark:hover:bg-gray-800 transition text-center"><i class="fa-solid fa-download mr-2"></i>Descargar CV</a>
+                <a href="/archivos/Nicolas_Chiesa_CV_Frontend.pdf" download="Nicolas_Chiesa_CV.pdf" class="border-2 border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 px-8 py-3 rounded-lg font-medium hover:bg-gray-50 dark:hover:bg-gray-800 transition text-center"><i class="fa-solid fa-download mr-2"></i>Descargar CV</a>
             </div>
         </div>
     </header>
@@ -42,6 +42,63 @@ import Layout from '../layouts/Layout.astro';
             <h3 class="text-3xl font-bold mb-12 text-center md:text-left text-gray-900 dark:text-white">Proyectos Destacados</h3>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- ── LALISTA ─────────────────────────────────────────── -->
+                <div class="border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition flex flex-col">
+                    <a href="https://lalista-frontend.vercel.app/" target="_blank" class="relative w-full h-56 bg-[#F7F7F7] flex items-center justify-center">
+                        <img src="/lalista/icono.png" alt="Logo de Lalista" class="h-44 w-44 object-contain">
+                        <span class="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-3 py-1.5 rounded-full">
+                            <i class="fa-solid fa-arrow-up-right-from-square mr-1"></i> Probar la app
+                        </span>
+                    </a>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="text-xl font-bold text-gray-900 dark:text-white">Lalista — Comparador de precios</h4>
+                            <div class="flex gap-3">
+                                <a href="https://lalista-frontend.vercel.app/" target="_blank" title="Probar la app" class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition">
+                                    <i class="fa-solid fa-globe text-xl"></i>
+                                </a>
+                                <a href="https://github.com/RemesarDev/lalista-frontend" target="_blank" title="Ver código fuente" class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition">
+                                    <i class="fa-brands fa-github text-xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4 flex-1 text-sm">
+                            PWA que compara cuánto cuesta una lista de compras en los supermercados cercanos, con los precios públicos del SEPA. Proyecto final de la tecnicatura en un equipo de 5. Desarrollé la ficha de producto, el comparador, los filtros por categoría con debounce, los avisos con opción de deshacer y componentes reutilizables, con diseño Mobile First y accesibilidad (ARIA).
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">React</span>
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">Next.js</span>
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">TypeScript</span>
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">Tailwind CSS</span>
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">Zustand</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── E-COMMERCE REACT NATIVE ─────────────────────────── -->
+                <div class="border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition flex flex-col">
+                    <div class="relative w-full h-56 bg-gray-100 dark:bg-gray-700 flex items-center justify-center">
+                        <i class="fa-solid fa-mobile-screen-button text-7xl text-gray-400 dark:text-gray-500"></i>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="text-xl font-bold text-gray-900 dark:text-white">App mobile de e-commerce</h4>
+                            <a href="https://github.com/NicolasChiesaDev/ecommerce-mobile-react-native" target="_blank" title="Ver código fuente" class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition">
+                                <i class="fa-brands fa-github text-xl"></i>
+                            </a>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4 flex-1 text-sm">
+                            Réplica funcional de la app de Frávega para practicar desarrollo mobile. Navegación con menú lateral y pestañas por categoría (celulares, televisores), catálogo con fichas de producto y login de prueba.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">React Native</span>
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">Expo Router</span>
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">TypeScript</span>
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">NativeWind</span>
+                        </div>
+                    </div>
+                </div>
 
                 <!-- ── ARGECON AI ───────────────────────────────── -->
                 <div class="border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition flex flex-col">
@@ -62,19 +119,51 @@ import Layout from '../layouts/Layout.astro';
                                 <a href="https://argecon-ai.onrender.com" target="_blank" title="Ver web en vivo" class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition">
                                     <i class="fa-solid fa-globe text-xl"></i>
                                 </a>
-                                <a href="https://github.com/Nicocc12/argecon-ai" target="_blank" title="Ver código fuente" class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition">
+                                <a href="https://github.com/NicolasChiesaDev/argecon-ai" target="_blank" title="Ver código fuente" class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition">
                                     <i class="fa-brands fa-github text-xl"></i>
                                 </a>
                             </div>
                         </div>
                         <p class="text-gray-600 dark:text-gray-400 mb-4 flex-1 text-sm">
-                            Agente de análisis económico argentino en tiempo real. Consume las APIs oficiales del BCRA y dolarapi.com para obtener cotizaciones del dólar, reservas internacionales y variables monetarias. Calcula inflación acumulada y tendencia de los últimos 12 meses, y genera análisis automáticos en lenguaje natural usando LLaMA 3 a través de Groq AI.
+                            Dashboard responsive que muestra en tiempo real las cotizaciones del dólar, las reservas y variables del BCRA y la inflación de los últimos 12 meses, con estados de carga y manejo de errores. Suma análisis económicos en lenguaje natural generados con LLaMA 3 (Groq), a través de una API propia en FastAPI.
                         </p>
                         <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">JavaScript</span>
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">HTML y CSS</span>
                             <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">Python</span>
                             <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">FastAPI</span>
                             <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">LLaMA 3</span>
                             <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">IA Generativa</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── MOTOR DE STOCK INTELIGENTE ─────────────────────── -->
+                <div class="border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition flex flex-col">
+                    <div class="relative w-full h-56 group bg-gray-200 dark:bg-gray-700">
+                        <div class="flex overflow-x-auto snap-x snap-mandatory hide-scrollbar h-full w-full">
+                            <div class="snap-center shrink-0 w-full h-full"><img src="/stock/1.png" alt="Panel de Caja y Ventas" class="w-full h-full object-cover"></div>
+                            <div class="snap-center shrink-0 w-full h-full"><img src="/stock/2.png" alt="Inventario en tiempo real" class="w-full h-full object-cover"></div>
+                        </div>
+                        <div class="absolute bottom-3 right-3 bg-black/60 backdrop-blur-sm text-white text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                            <i class="fa-solid fa-arrows-left-right mr-1"></i> Deslizar
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="text-xl font-bold text-gray-900 dark:text-white">Motor de Stock Inteligente</h4>
+                            <a href="https://github.com/NicolasChiesaDev/predictor-stock" target="_blank" title="Ver código fuente" class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition">
+                                <i class="fa-brands fa-github text-xl"></i>
+                            </a>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4 flex-1 text-sm">
+                            Interfaz en React para registrar ventas y ver el inventario en tiempo real, pensada a partir de mi trabajo en un comercio. Una API en FastAPI y un agente con LLaMA 3.1 detectan los productos por agotarse y proponen pedidos de reposición según el consumo.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">React</span>
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">FastAPI</span>
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">SQLite</span>
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">LLaMA 3.1</span>
                         </div>
                     </div>
                 </div>
@@ -94,15 +183,16 @@ import Layout from '../layouts/Layout.astro';
                     <div class="p-6 flex-1 flex flex-col">
                         <div class="flex justify-between items-start mb-4">
                             <h4 class="text-xl font-bold text-gray-900 dark:text-white">Sistema de Registro - Maratón</h4>
-                            <a href="https://github.com/Nicocc12/maraton-ituzaingo-web" target="_blank" class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400"><i class="fa-brands fa-github text-xl"></i></a>
+                            <a href="https://github.com/NicolasChiesaDev/maraton-ituzaingo-web" target="_blank" class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400"><i class="fa-brands fa-github text-xl"></i></a>
                         </div>
                         <p class="text-gray-600 dark:text-gray-400 mb-4 flex-1 text-sm">
-                            Desarrollo de una plataforma web para la gestión e inscripción de corredores. Implementé formularios, conexión a base de datos y un panel de administrador para gestionar participantes. Cuenta con generación automática de códigos QR para acreditación y envío de emails de confirmación.
+                            Plataforma de inscripción que desarrollamos en equipo para la Maratón de la Municipalidad de Ituzaingó. Trabajé en la página pública de inscripción (formularios, validaciones y Google reCAPTCHA), en el código QR por participante con su correo de confirmación y en un lector de QR para el panel de administración.
                         </p>
                         <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">HTML y CSS</span>
+                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">JavaScript</span>
                             <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">PHP</span>
                             <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">MySQL</span>
-                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">JavaScript</span>
                         </div>
                     </div>
                 </div>
@@ -122,7 +212,7 @@ import Layout from '../layouts/Layout.astro';
                     <div class="p-6 flex-1 flex flex-col">
                         <div class="flex justify-between items-start mb-4">
                             <h4 class="text-xl font-bold text-gray-900 dark:text-white">Sistema Gestión Biblioteca</h4>
-                            <a href="https://github.com/Nicocc12/sistema-biblioteca-java" target="_blank" class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400"><i class="fa-brands fa-github text-xl"></i></a>
+                            <a href="https://github.com/NicolasChiesaDev/sistema-biblioteca-java" target="_blank" class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400"><i class="fa-brands fa-github text-xl"></i></a>
                         </div>
                         <p class="text-gray-600 dark:text-gray-400 mb-4 flex-1 text-sm">
                             Sistema de escritorio diseñado para la transición de planillas manuales a un entorno centralizado. Utilicé herencia en POO para diferenciar materiales, implementé lógica de préstamos validada por DNI y un sistema de migración de datos desde Excel.
@@ -131,36 +221,6 @@ import Layout from '../layouts/Layout.astro';
                             <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">Java</span>
                             <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">POO</span>
                             <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">Migración de Datos</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ── MOTOR DE STOCK INTELIGENTE ─────────────────────── -->
-                <div class="border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition flex flex-col">
-                    <div class="relative w-full h-56 group bg-gray-200 dark:bg-gray-700">
-                        <div class="flex overflow-x-auto snap-x snap-mandatory hide-scrollbar h-full w-full">
-                            <div class="snap-center shrink-0 w-full h-full"><img src="/stock/1.png" alt="Panel de Caja y Ventas" class="w-full h-full object-cover"></div>
-                            <div class="snap-center shrink-0 w-full h-full"><img src="/stock/2.png" alt="Inventario en tiempo real" class="w-full h-full object-cover"></div>
-                        </div>
-                        <div class="absolute bottom-3 right-3 bg-black/60 backdrop-blur-sm text-white text-xs px-3 py-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-                            <i class="fa-solid fa-arrows-left-right mr-1"></i> Deslizar
-                        </div>
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col">
-                        <div class="flex justify-between items-start mb-4">
-                            <h4 class="text-xl font-bold text-gray-900 dark:text-white">Motor de Stock Inteligente</h4>
-                            <a href="https://github.com/Nicocc12/predictor-stock" target="_blank" title="Ver código fuente" class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition">
-                                <i class="fa-brands fa-github text-xl"></i>
-                            </a>
-                        </div>
-                        <p class="text-gray-600 dark:text-gray-400 mb-4 flex-1 text-sm">
-                            Sistema Full-Stack para gestión de inventario y registro de ventas en tiempo real. Integra un agente predictivo con LLaMA 3.1 para analizar puntos críticos de stock y generar órdenes de reposición automatizadas basándose en el consumo.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mt-auto">
-                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">FastAPI</span>
-                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">React</span>
-                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">SQLite</span>
-                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 text-xs px-3 py-1 rounded-full">LLaMA 3.1</span>
                         </div>
                     </div>
                 </div>
@@ -174,10 +234,10 @@ import Layout from '../layouts/Layout.astro';
             <div class="flex-1">
                 <h3 class="text-3xl font-bold mb-6 text-gray-900 dark:text-white">Sobre Mí</h3>
                 <p class="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
-                    Soy un apasionado por la tecnología cursando el último año de la Tecnicatura en Programación. Me especializo en el diseño de arquitecturas backend, la integración de APIs y el modelado de bases de datos.
+                    Estoy en el último año de la Tecnicatura Superior en Desarrollo de Software (egreso en diciembre de 2026) y me enfoco en el frontend: me gusta construir interfaces que se entiendan a la primera, funcionen bien en el celular y sean accesibles. Trabajo con React, Next.js, TypeScript y Tailwind CSS, y tengo base de backend (APIs REST y SQL), lo que me ayuda a integrar el front con los datos.
                 </p>
                 <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
-                    Además de mi formación técnica, mi experiencia trabajando día a día como Vendedor y Asistente Administrativo me forjó habilidades fundamentales que el código no te enseña: comunicación clara con clientes, gestión de stock, resolución metódica de problemas en tiempo real y un fuerte enfoque en brindar soluciones operativas.
+                    Además, trabajo como vendedor y asistente administrativo en un comercio. Ahí aprendí a explicar las cosas con claridad, a resolver problemas en el momento y a pensar en la persona que usa el sistema, algo que hoy aplico cuando diseño una pantalla.
                 </p>
             </div>
             <img src="/yo.jpg" alt="Foto de perfil de Nicolas" class="w-64 h-64 object-cover rounded-2xl shadow-lg border-4 border-white dark:border-gray-800">
@@ -188,58 +248,55 @@ import Layout from '../layouts/Layout.astro';
         <div class="max-w-5xl mx-auto px-6">
             <h3 class="text-3xl font-bold mb-12 text-center text-gray-900 dark:text-white">Tecnologías y Herramientas</h3>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-                <!-- Fila 1: Fuertes (Backend / Datos / IA) -->
                 <div class="p-6 border border-gray-100 dark:border-gray-800 dark:bg-gray-800 rounded-xl hover:shadow-md transition">
-                    <i class="fa-brands fa-python text-4xl text-blue-500 mb-3"></i>
-                    <h5 class="font-medium dark:text-white">Python</h5>
-                    <p class="text-xs text-gray-500 mt-1">Backend & Lógica</p>
+                    <i class="fa-brands fa-react text-4xl text-sky-500 mb-3"></i>
+                    <h5 class="font-medium dark:text-white">React</h5>
+                    <p class="text-xs text-gray-500 mt-1">Componentes y hooks</p>
                 </div>
                 <div class="p-6 border border-gray-100 dark:border-gray-800 dark:bg-gray-800 rounded-xl hover:shadow-md transition">
-                    <i class="fa-solid fa-bolt text-4xl text-green-500 mb-3"></i>
-                    <h5 class="font-medium dark:text-white">FastAPI</h5>
-                    <p class="text-xs text-gray-500 mt-1">REST APIs</p>
+                    <span class="inline-flex items-center justify-center h-10 min-w-10 px-1 mb-3 rounded-md font-bold text-lg bg-gray-900 text-white dark:bg-white dark:text-gray-900">N</span>
+                    <h5 class="font-medium dark:text-white">Next.js</h5>
+                    <p class="text-xs text-gray-500 mt-1">App Router</p>
                 </div>
                 <div class="p-6 border border-gray-100 dark:border-gray-800 dark:bg-gray-800 rounded-xl hover:shadow-md transition">
-                    <i class="fa-solid fa-robot text-4xl text-purple-500 mb-3"></i>
-                    <h5 class="font-medium dark:text-white">IA Generativa</h5>
-                    <p class="text-xs text-gray-500 mt-1">LLMs & Integración</p>
+                    <span class="inline-flex items-center justify-center h-10 min-w-10 px-1 mb-3 rounded-md font-bold text-lg bg-blue-600 text-white">TS</span>
+                    <h5 class="font-medium dark:text-white">TypeScript</h5>
+                    <p class="text-xs text-gray-500 mt-1">Tipado</p>
                 </div>
                 <div class="p-6 border border-gray-100 dark:border-gray-800 dark:bg-gray-800 rounded-xl hover:shadow-md transition">
-                    <i class="fa-solid fa-database text-4xl text-blue-400 mb-3"></i>
-                    <h5 class="font-medium dark:text-white">MySQL</h5>
-                    <p class="text-xs text-gray-500 mt-1">Modelado de Datos</p>
+                    <i class="fa-solid fa-wind text-4xl text-cyan-500 mb-3"></i>
+                    <h5 class="font-medium dark:text-white">Tailwind CSS</h5>
+                    <p class="text-xs text-gray-500 mt-1">Estilos y responsive</p>
                 </div>
-                
-                <!-- Fila 2: Versatilidad Backend / Control -->
-                <div class="p-6 border border-gray-100 dark:border-gray-800 dark:bg-gray-800 rounded-xl hover:shadow-md transition">
-                    <i class="fa-brands fa-php text-4xl text-indigo-500 mb-3"></i>
-                    <h5 class="font-medium dark:text-white">PHP</h5>
-                    <p class="text-xs text-gray-500 mt-1">Server Side</p>
-                </div>
-                <div class="p-6 border border-gray-100 dark:border-gray-800 dark:bg-gray-800 rounded-xl hover:shadow-md transition">
-                    <i class="fa-brands fa-java text-4xl text-red-600 mb-3"></i>
-                    <h5 class="font-medium dark:text-white">Java</h5>
-                    <p class="text-xs text-gray-500 mt-1">POO Avanzado</p>
-                </div>
-                <div class="p-6 border border-gray-100 dark:border-gray-800 dark:bg-gray-800 rounded-xl hover:shadow-md transition">
-                    <i class="fa-brands fa-github text-4xl text-gray-700 dark:text-gray-300 mb-3"></i>
-                    <h5 class="font-medium dark:text-white">Git & GitHub</h5>
-                    <p class="text-xs text-gray-500 mt-1">Control de Versiones</p>
-                </div>
-                <!-- Fila 3: Complementarios Frontend -->
                 <div class="p-6 border border-gray-100 dark:border-gray-800 dark:bg-gray-800 rounded-xl hover:shadow-md transition">
                     <i class="fa-brands fa-js text-4xl text-yellow-400 mb-3"></i>
                     <h5 class="font-medium dark:text-white">JavaScript</h5>
-                    <p class="text-xs text-gray-500 mt-1">Integraciones</p>
+                    <p class="text-xs text-gray-500 mt-1">ES6+</p>
+                </div>
+                <div class="p-6 border border-gray-100 dark:border-gray-800 dark:bg-gray-800 rounded-xl hover:shadow-md transition">
+                    <i class="fa-brands fa-html5 text-4xl text-orange-500 mb-3"></i>
+                    <h5 class="font-medium dark:text-white">HTML y CSS</h5>
+                    <p class="text-xs text-gray-500 mt-1">Semántica y accesibilidad</p>
+                </div>
+                <div class="p-6 border border-gray-100 dark:border-gray-800 dark:bg-gray-800 rounded-xl hover:shadow-md transition">
+                    <i class="fa-solid fa-mobile-screen-button text-4xl text-indigo-500 mb-3"></i>
+                    <h5 class="font-medium dark:text-white">React Native</h5>
+                    <p class="text-xs text-gray-500 mt-1">Apps con Expo</p>
+                </div>
+                <div class="p-6 border border-gray-100 dark:border-gray-800 dark:bg-gray-800 rounded-xl hover:shadow-md transition">
+                    <i class="fa-brands fa-github text-4xl text-gray-700 dark:text-gray-300 mb-3"></i>
+                    <h5 class="font-medium dark:text-white">Git y GitHub</h5>
+                    <p class="text-xs text-gray-500 mt-1">Ramas y pull requests</p>
                 </div>
             </div>
+            <p class="text-center text-gray-600 dark:text-gray-400 mt-10">También trabajo con Python, FastAPI, SQL (PostgreSQL y MySQL), PHP, Java e integración de modelos de lenguaje.</p>
         </div>
     </section>
 
     <section id="contacto" class="py-20 bg-blue-600 dark:bg-blue-800 text-white transition-colors duration-300">
         <div class="max-w-3xl mx-auto px-6 text-center">
             <h3 class="text-3xl font-bold mb-6">¿Trabajamos juntos?</h3>
-            <p class="text-blue-100 mb-8 text-lg">Si tenés un proyecto en mente o querés sumar un perfil proactivo a tu equipo, completá el formulario o contactame por LinkedIn.</p>
+            <p class="text-blue-100 mb-8 text-lg">Busco mi primera posición como desarrollador frontend, junior o trainee. Si tenés una búsqueda abierta o un proyecto, escribime por el formulario o por LinkedIn.</p>
 
             <form action="https://formspree.io/f/meevonrw" method="POST" class="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-xl text-left mb-10">
                 <div class="grid grid-cols-1 gap-6">
@@ -259,9 +316,12 @@ import Layout from '../layouts/Layout.astro';
                 </div>
             </form>
 
-            <div class="flex justify-center gap-6">
+            <div class="flex flex-wrap justify-center gap-6">
                 <a href="https://www.linkedin.com/in/nicolas-chiesa-dev" target="_blank" class="flex items-center gap-2 border-2 border-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 dark:hover:bg-blue-900 transition">
                     <i class="fa-brands fa-linkedin text-xl"></i> LinkedIn
+                </a>
+                <a href="https://github.com/NicolasChiesaDev" target="_blank" class="flex items-center gap-2 border-2 border-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 dark:hover:bg-blue-900 transition">
+                    <i class="fa-brands fa-github text-xl"></i> GitHub
                 </a>
             </div>
         </div>
@@ -292,4 +352,4 @@ import Layout from '../layouts/Layout.astro';
             };
         };
     </script>
-</Layout>
+</Layout>
